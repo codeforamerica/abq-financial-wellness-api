@@ -1,0 +1,12 @@
+language: python
+python:
+- '2.7'
+install: pip install -r requirements.txt
+script: nosetests
+deploy:
+  provider: heroku
+  api_key:
+    secure: najUMOXEEZhmr51uwHus+lt9NVL12DQkAOPZb63HUd/VEw/Dyti7sXs14GVG+vGJ0Vi09YpQVlc8+hST6kJo3TW5LefLM6b1fzHu4imPNkhxs5Bwn5NjVh1fW4ja0NJuQqxrkdFY8/f1Yq1gipSTKIL2k2VjCDd6uNcpbzc+FyiTASIvKpugj9jV8DwMc04cfdaWbL5oJ/yqZmXS54hyazgrPAWyM9YMsDnj+IEkSg2ZeCw0JMoaw3h2ZVBxsiC7RE21hXPi2iUssNpAyxen+pq4vEvdM9wj1cclgnpYH2lP4QfBuWBTSAS7kiAUOfUe4tLdm6ZjMq5MGGo/Mv41Nh/ynOGJp12k72IP8j5OOdpAh4LSjbPjwPYIF17y8V65dlavN+cHkp9zOOHTvO8xXdT45EicCXwgxyQhRcroDxpJnJ/NK3pD0Nqo0PrWayGfZiBcb5rbDPUMhPGg7CXlrRM/yRAsuCv/44k7INghwgKtpH7AI0XS7KqezgPAYYLSUJMxfnbqVYF12/uv5iuFeYHXd0eyrLhtxXuyAhC4rJJ/LFgCyq7GhCyVyoDYOPnpDn41MD5/pHeHGKOaf+CTxLOe3LsP4VIrXZaxrWVGHkPRsMmLdJAIq+YL5QjUFWSudJXFcb7ggqYxC4RQwU7PImYh318BWZLjqObHA/DKR1w=
+  app: 
+    master: production-abq-financial-api
+    staging: staging-abq-financial-api
