@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-  return 'Hello to the World of Flask!'
+  return 'This is the api for ABQ Financial Wellness Wizard'
 
 if __name__ == '__main__':
   app.run()
